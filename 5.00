@@ -3,7 +3,7 @@ var r = parseFloat(process.argv[2]);
 
 if (!isNaN(f) && !isNaN(r)) {
 
-	if (0<=f && r<=1000){
-		console.log((f*r).toFixed(2));
+	if (0<=f && r<=10000){
+		process.stdout.write((f*r).toFixed(2));
 	}
 }
